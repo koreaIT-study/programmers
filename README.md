@@ -45,7 +45,7 @@ ex> 예시
 ## Schedule
 - 매주  `목요일 21:00 ~ 22:00`  
 - 장소 ZOOM
-
+ 
 |회차|내용|날짜|
 | :---: | :---: | :---: |
 | 1 | 해시 - 완주하지 못한 선수 ★ (https://school.programmers.co.kr/learn/courses/30/lessons/42576)  | 22.07.14 |
