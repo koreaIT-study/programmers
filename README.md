@@ -49,7 +49,7 @@ ex> 예시
 |회차|내용|날짜|
 | :---: | :---: | :---: |
 | 1 | 해시 - 완주하지 못한 선수 ★ (https://school.programmers.co.kr/learn/courses/30/lessons/42576)  | 22.07.14 |
-| 2 | 스택 - 같은 숫자는 싫어 ★ https://school.programmers.co.kr/learn/courses/30/lessons/77484 | 22.07.21 |
+| 2 | 스택 - 같은 숫자는 싫어 ★ https://school.programmers.co.kr/learn/courses/30/lessons/12906 | 22.07.21 |
 | 2 | 로또의 최고 순위와 최저 순위 ★ https://school.programmers.co.kr/learn/courses/30/lessons/77484 | 22.07.21 |
 
 
