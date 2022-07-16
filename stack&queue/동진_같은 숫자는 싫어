@@ -1,0 +1,28 @@
+```
+import java.util.*;
+
+public class Solution {
+    public int[] solution(int []arr) {
+        Stack<Integer> stack = new Stack<>();
+        
+        for(int i = 0; i < arr.length; i++){
+            final Integer el = arr[i];
+            if(i == 0){
+                stack.push(el);
+            }
+            if(i != 0){
+                if(stack.peek() == arr[i]){
+                    continue;
+                } else {
+                    stack.push(el);
+                }
+            }
+        }
+
+        final int[] answer = stack.stream()
+            .mapToInt(Integer::intValue)
+            .toArray();
+        return answer;
+    }
+}
+```
