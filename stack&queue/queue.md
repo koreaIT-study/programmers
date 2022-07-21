@@ -9,7 +9,8 @@ Queue는 사전적으로 "줄을 서다"라는 의미이다. 줄을 서서 기�
 # 큐 선언방법
 사용 방법은 Queue를 선언해서 사용하면 된다. 제네릭 부분에서는 사용할 객체를 담으면 된다.
 ```java
-  import java.util.Queue;	//import 하기
+import java.util.LinkedList;
+import java.util.Queue;	//import 하기
   Queue<String> queue = new LinkedList<String>();  //String 형 Queue 선언
   Queue<String> queue1 = new LinkedList<Integer>(); // Integer타입으로 선언
   Queue<String> queue2 = new LinkedList<>(); // new부분 타입 생략 가능
@@ -22,7 +23,7 @@ Queue는 사전적으로 "줄을 서다"라는 의미이다. 줄을 서서 기�
 
 ### Queue 추가 - add
 ```java
-  import java.util.LinkedList;
+import java.util.LinkedList;
 import java.util.Queue;
 
 public class Study_Queue {
