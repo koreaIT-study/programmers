@@ -3,6 +3,9 @@ Queue는 사전적으로 "줄을 서다"라는 의미이다. 줄을 서서 기�
 일명 FIFO(FirstInFirstOut) 방식
 반대로 Stack은 LIFO방식이라 두 개가 많이 비교된다
 
+![image](https://user-images.githubusercontent.com/93892965/180133888-119010a3-98b9-4c6c-80d2-205236aeef42.png)
+
+
 # 큐 선언방법
 사용 방법은 Queue를 선언해서 사용하면 된다. 제네릭 부분에서는 사용할 객체를 담으면 된다.
 ```java
