@@ -21,7 +21,7 @@ import java.util.Queue;	//import 하기
 
 # 큐의 기본 함수
 
-### Queue 추가 - add
+### Queue 추가 - add,offer
 ```java
 import java.util.LinkedList;
 import java.util.Queue;
@@ -32,13 +32,13 @@ public class Study_Queue {
 		
 		// 값 추가
 		queue.add("Hello");
-		queue.add("World");
+		queue.offer("World");
 		
 		System.out.print(queue); // 결과 출력
 	}
 }
 ```
-Queue의 값을 추가하는 방법은 add() 메서드로 add(Object)로 값을 추가한다.
+Queue의 값을 추가하는 방법은 add() 메서드나 offer() 메서드로 값을 추가한다.
 데이터가 뒤에서부터 차례대로 들어오기 때문에 출력값은 [Hello, World]로 출력된다. 
 
 ### Queue 삭제 - poll, remove
