@@ -120,7 +120,7 @@ C는 집합 Gij의 최적 개수를 나타낸다.
 
 max는 B18에서 A6 말고 다른 것을 골랐을 때의 경우도 모두 생각해서 그 중 최적을 찾는 거다.
 
-이렇게 동적 프로그래밍으로 할 수도 있지만,(동적 프로그래밍은 다음에....) 
+이렇게 동적 프로그래밍으로 할 수도 있지만,(동적 프로그래밍 설명은 다음에....) 
 
 문제는 이렇게 하면 모든 C들을 구해야한다는 것이다.
 
@@ -161,3 +161,84 @@ activitySelection(activity); // [1, 3, 6, 8]
 ```
 
 일단 끝나는 시간 순으로 정렬한 후, 반복문을 돌며 집합의 끝나는 시간이 다음 행동의 시작 시간보다 작은 경우 집합에 추가하면 된다.
+
+출처 : https://www.zerocho.com/category/Algorithm/post/584ba5c9580277001862f188
+
+위와 똑같은 다른 설명을 가져왔음.
+
+<img width="476" alt="스크린샷 2022-07-24 오후 5 36 24" src="https://user-images.githubusercontent.com/82895809/180639208-254b3231-ccdf-436e-9cdd-71b9766777e1.png">
+
+위에서 각 활동과 그것들의 시작 / 종료 시간이 설정되어 있는 것을 알 수 있다.
+
+이 문제는 최대한 많은 활동을 해야 하므로 언제 시작하든 전체에서 가장 종료 시간이 빠른 것부터 선택해야 한다.
+
+어차피 시작 시간은 종료 시간 이전이므로 고려하지 않는다.
+
+따라서, 종료 시간을 기준으로 정렬한 뒤, 제일 먼저 끝나는 활동을 무조건 선택하고 끝났을 때, 바로 다음에 선택할 수 있는 활동을 찾아 수행하는 방식을 반복하여 해결할 수 있다.
+
+<img width="727" alt="스크린샷 2022-07-24 오후 5 36 55" src="https://user-images.githubusercontent.com/82895809/180639234-5fd3e6d4-7a60-49d9-ba72-0479ebe80d89.png">
+
+좌측 부터 수행 후 우측 그림과 같이 수행이 완료되어 최종 D - C - A - F 번째 활동을 선택하게 된다.
+
+``` java
+public class Main{
+    public static void main(String[] args){
+        // 활동 정보를 List에 저장하고 정렬한다.
+        ArrayList<Action> list = new ArrayList<>();
+        list.add(new Action("A", 7, 8));
+        list.add(new Action("B", 5, 7));
+        list.add(new Action("C", 3, 6));
+        list.add(new Action("D", 1, 2));
+        list.add(new Action("E", 6, 9));
+        list.add(new Action("F", 10, 11));
+        Collections.sort(list);
+        
+        // Greedy 알고리즘 수행 후, 결과 출력
+        ArrayList<Action> ans = greedy(list);
+        for(Action act : ans){
+            System.out.print(act.name + ", ");
+        }
+    }
+
+    // Greedy 알고리즘을 통해 선택된 활동들을 반환한다.
+    private static ArrayList<Action> greedy(ArrayList<Action> list){
+        int time = 0;
+        ArrayList<Action> ans = new ArrayList<>();
+
+        for(Action act : list){
+            if(time <= act.startTime){
+                time = act.endTime;
+                ans.add(act);
+            }
+        }
+        return ans;
+    }
+}
+
+// 활동 정보를 가진 Class로 Comparable을 구현하여 종료 시간 기준 오름차순으로 정렬함.
+class Action implements Comparable<Action>{
+    String name;
+    int startTime;
+    int endTime;
+    public Action(String name, int startTime, int endTime){
+        this.name = name;
+        this.startTime = startTime;
+        this.endTime = endTime;
+    }
+
+    @Override
+    public int compareTo(Action a) {
+        return this.endTime - a.endTime;
+    }
+
+    @Override
+    public String toString() {
+        return this.name;
+    }
+}
+
+// 결과
+// D, C, A, F, 
+```
+출처 : https://hongjw1938.tistory.com/172
+
