@@ -53,6 +53,9 @@ ex> 예시
 | 2 | 로또의 최고 순위와 최저 순위 ★ https://school.programmers.co.kr/learn/courses/30/lessons/77484 | 22.07.21 |
 | 3 | 실패율 ★ https://school.programmers.co.kr/learn/courses/30/lessons/42889 | 22.07.28 |
 | 3 | 그리디 - 체육복 ★ https://school.programmers.co.kr/learn/courses/30/lessons/42862 | 22.07.28 |
+| 4 | 기출문제 - 두 큐 합 같게 만들기 ★★ https://school.programmers.co.kr/learn/courses/30/lessons/118667 | 22.12.15 |
+| 4 | 기출문제 - 성격 유형 검사하기 ★ https://school.programmers.co.kr/learn/courses/30/lessons/118666 | 22.12.15 |
+| 4 | 기출문제 - 양궁대회 ★★ https://school.programmers.co.kr/learn/courses/30/lessons/92342 | 22.12.15 |
 
 
 
