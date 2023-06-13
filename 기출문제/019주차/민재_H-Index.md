@@ -1,4 +1,5 @@
-```
++ 내풀이
+```java
 class Solution {
     public int solution(int[] citations) {
         int answer = 0;
@@ -28,3 +29,24 @@ class Solution {
 }
 ```
 ![image](https://github.com/koreaIT-study/programmers/assets/92290312/96965021-209b-4478-bc2b-0769331669d1)
+
++ 다른사람 풀이
+
+```java
+import java.util.*;
+
+class Solution {
+    public int solution(int[] citations) {
+        Arrays.sort(citations);
+
+        int max = 0;
+        for(int i = citations.length-1; i > -1; i--){
+            int min = (int)Math.min(citations[i], citations.length - i);
+            if(max < min) max = min;
+        }
+
+        return max;
+    }
+}
+```
+![image](https://github.com/koreaIT-study/programmers/assets/92290312/cb1b7ca2-5ed8-497b-9b1a-7c95a5bd9249)
