@@ -1,7 +1,7 @@
 [숫자 블록](https://school.programmers.co.kr/learn/courses/30/lessons/12923)
 
 
-<a href="https://school.programmers.co.kr/learn/courses/30/lessons/12924">![image](https://github.com/koreaIT-study/programmers/assets/92290312/873cbd8c-c228-40ca-8e68-e3fd139ee819)</a>
+![image](https://github.com/koreaIT-study/programmers/assets/92290312/873cbd8c-c228-40ca-8e68-e3fd139ee819)
 [숫자의표현](https://school.programmers.co.kr/learn/courses/30/lessons/12924)
 
 <a href="https://school.programmers.co.kr/learn/courses/30/lessons/42584">
