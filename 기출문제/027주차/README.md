@@ -5,3 +5,7 @@
 [괄호 회전하기](https://school.programmers.co.kr/learn/courses/30/lessons/76502)
 
 <img width="815" alt="스크린샷 2023-08-10 오후 10 14 19" src="https://github.com/koreaIT-study/programmers/assets/82895809/bc99462f-624c-421e-b66a-eb668e775672">
+
+[멀리 뛰기](https://school.programmers.co.kr/learn/courses/30/lessons/12914)
+
+![스크린샷 2023-08-10 오후 10 25 04](https://github.com/koreaIT-study/programmers/assets/82895809/e31c0538-862a-49d1-81b9-c1a5d3f5d9cb)
