@@ -1,0 +1,42 @@
+
+```java
+class Solution {
+    public String solution(String p) {
+        String answer = "";
+        StringBuilder sb = new StringBuilder();
+        int openCnt = 0;
+        int closeCnt = 0;
+        int i = 0;
+
+        for (i = 0; i < p.length(); i++) {
+            char c = p.charAt(i);
+            if (c == '(') {
+                openCnt++;
+            } else {
+                closeCnt++;
+            }
+
+            sb.append(c);
+
+            if (openCnt == closeCnt) {
+                if (sb.charAt(0) == ')') {
+                    break;
+                }
+                answer += sb.toString();
+                sb.delete(0, sb.length());
+            }
+        }
+
+        if (i != p.length()) {
+            String u = sb.toString()
+                    .substring(1, sb.length() - 1)
+                    .replace("(", "[")
+                    .replace(")", "(")
+                    .replace("[", ")");
+            String v = "(" + solution(p.substring(i + 1)) + ")";
+            answer += v + u;
+        }
+        return answer;
+    }
+}
+```
