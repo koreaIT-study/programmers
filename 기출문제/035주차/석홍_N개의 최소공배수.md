@@ -1,4 +1,5 @@
-![image](https://github.com/koreaIT-study/programmers/assets/67637716/a3c2cc94-6f82-4b46-ba05-f2536493997d)  
+![image](https://github.com/koreaIT-study/programmers/assets/67637716/f5a0a8cb-02b1-4f8c-b736-0d7f8f8be7a3)  
+
 
 
 ```
@@ -7,15 +8,9 @@ import java.util.Arrays;
 class Solution {
 
     public int solution(int[] arr) {
-        int answer = 0;
-        Arrays.sort(arr);
+        int answer = 1;
 
-        if (arr.length == 1)
-            return arr[0];
-        
-        answer = getLCM(arr[arr.length-1], arr[arr.length-2]);
-
-        for(int i = arr.length-3;i>=0;i--) {
+        for(int i = arr.length-1;i>=0;i--) {
             if(answer % arr[i] != 0) {
                 answer = getLCM(answer, arr[i]);
             }
