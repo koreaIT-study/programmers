@@ -8,4 +8,4 @@
 ![image](https://github.com/koreaIT-study/programmers/assets/92290312/a9c8a200-330f-4d0e-b24d-1b8f3dfe56b0)
 
 
-[https://school.programmers.co.kr/learn/courses/30/lessons/176962](과제 진행하기)
+[https://school.programmers.co.kr/learn/courses/30/lessons/176962](과제_진행하기)
