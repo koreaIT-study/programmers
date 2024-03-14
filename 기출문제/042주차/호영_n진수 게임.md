@@ -7,8 +7,8 @@ function solution(n, t, m, p) {
         temp += i.toString(n).toUpperCase();
     }
     
-    for (let j = p - 1; j < t * m; j += m) {
-        answer += candidate[j];
+    for (let i = p - 1; i < t * m; i += m) {
+        answer += temp[i];
     }
     
     return answer; 
