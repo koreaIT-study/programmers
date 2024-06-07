@@ -1,3 +1,3 @@
-![image](https://github.com/koreaIT-study/programmers/assets/92290312/16a55b83-ac1e-4aed-b9cb-d696ac52ef85)
+![image](https://github.com/koreaIT-study/programmers/assets/92290312/f96eca3c-4079-4bcd-ab95-7eee9143d068)
 
-[카카오프렌즈 컬러링북](https://school.programmers.co.kr/learn/courses/30/lessons/1829)
+[[PCCP 기출문제] 2번 / 석유 시추](https://school.programmers.co.kr/learn/courses/30/lessons/250136)
